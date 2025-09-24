@@ -17,18 +17,19 @@ const LoginForm = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
-        <div>
+        <h2 className="font-mono text-4xl">Login</h2>
+        <div className="flex items-center justify-center-safe">
           <label htmlFor="username">Username:</label>
           <input
             type="text"
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
         </div>
         <div>
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password" className="">Password:</label>
           <input
             type="password"
             id="password"
