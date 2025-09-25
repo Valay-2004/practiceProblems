@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <LoginForm/>
-    <footer className='flex bg-white border-2 shadow-white'>Valay</footer>
+    <footer className='flex items-center justify-center w-full m-0'>Valay</footer>
     </>
   )
 }
