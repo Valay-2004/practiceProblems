@@ -19,16 +19,19 @@ const LoginForm = () => {
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-200">
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md:"
+          className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md"
         >
-          <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-6"></h2>
+          Welcome Back 👋
+          <h2/>
+
+          {/*username*/}
+          <div className="mb-4">
+            <label htmlFor="username" className="block text-sm font-medium text-gray-600 mb-1">Username:</label>
+          </div>
+
+
         </form>
-        
       </div>
     </>
   );
