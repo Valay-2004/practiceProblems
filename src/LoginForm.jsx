@@ -16,29 +16,20 @@ const LoginForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <h2 className="font-mono text-4xl">Login</h2>
-        <div className="flex items-center justify-center-safe">
-          <label htmlFor="username">Username:</label>
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-purple-200">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md:"
+        >
           <input
             type="text"
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
-        </div>
-        <div>
-          <label htmlFor="password" className="">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <button type="submit">Login</button>
-      </form>
+        </form>
+        
+      </div>
     </>
   );
 };
